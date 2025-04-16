@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Core Dark Mode */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+
+  /* Darken Navbar, Footer, Cards, Buttons etc. */
+body.dark-mode .navbar,
+body.dark-mode footer,
+body.dark-mode .card,
+body.dark-mode .form-control,
+body.dark-mode .btn {
+    background-color: #1f1f1f !important;
+    color: #ffffff !important;
+}
+
+  /* Links */
+body.dark-mode a {
+    color: #0dcaf0 !important;
+}
+
+  /* Labels and text */
+body.dark-mode .form-check-label,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li {
+    color: #ffffff !important;
+}
+
+  /* Optional transition effect */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container-m {
+    background: linear-gradient(45deg, 
+      rgb(240, 148, 51),   /* orange */
+      rgb(230, 104, 60),   /* reddish-orange */
+      rgb(220, 39, 67),    /* red-pink */
+      rgb(204, 35, 102),   /* dark pink/purple */
+      rgb(188, 24, 136)    /* magenta */
+    );
+    padding: 20px;
+    border-radius: 15px;
+    color: white; /* text color */
+}
+
+.typing-container {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    width: fit-content;
+    animation: typing 3s steps(15), blink 0.75s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0; }
+    to { width: 15ch; }
+}
+  
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.gradient-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, 
+      rgb(240,148,51), 
+      rgb(230,104,60), 
+      rgb(220,39,67), 
+      rgb(204,35,102), 
+      rgb(188,24,136));
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 3s linear infinite;
+}
+  
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
+  
+  
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+.right img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-border {
+    border: 6px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, #f09433, #e6683c, #15c7d7, #9723cc, #4ad613) border-box;
+}
+
+.about-img img{
+    height: 450px;
+    box-shadow: 10px 10px 5px rgba(15, 211, 192, 0.5), -10px -10px 5px rgba(237, 233, 236, 0.3);
+}
+
+#skills li::before {
+    content: "✔️ ";
+    margin-right: 0.4rem;
+}
+
+#projects .card-title {
+    font-weight: 600;
+}
+  
+#projects .btn {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+  
+.contact-info i {
+    color: #0d6efd;
+}
+.contact-info a {
+    text-decoration: none;
+    color: #000;
+}
+.contact-info a:hover {
+    color: #0d6efd;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0d6efd;
+}
+  
+  
+  
